@@ -1,0 +1,318 @@
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  padding: 2em;
+  margin-bottom: 2rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: rgba(30, 30, 30, 0.5);
+}
+
+.scenario-card {
+  background: linear-gradient(135deg, rgba(100, 108, 255, 0.1), rgba(130, 202, 157, 0.1));
+  border: 2px solid #646cff;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.run-scenario-btn {
+  background: linear-gradient(135deg, #646cff, #82ca9d);
+  font-size: 1.1em;
+  padding: 0.8em 1.5em;
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background-color: #ff4444;
+  padding: 0.3em 0.8em;
+  margin: 0;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+}
+
+.sample-data-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sample-data-section span {
+  color: #999;
+  font-style: italic;
+}
+
+.sample-btn {
+  background: linear-gradient(135deg, #82ca9d, #646cff);
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1em;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.response {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  text-align: left;
+  color: #333;
+}
+
+.upload-result,
+.summary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  border-radius: 4px;
+  text-align: left;
+}
+
+.upload-result p,
+.summary p {
+  margin: 0.5rem 0;
+}
+
+.forecast-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control-group label {
+  font-weight: bold;
+  min-width: 120px;
+  text-align: right;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chart-container {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.metrics-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+}
+
+.metrics-table th,
+.metrics-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.metrics-table th {
+  background-color: #2a2a2a;
+  font-weight: bold;
+}
+
+.metrics-table tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Scenario styles */
+.scenario-create {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-form {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+}
+
+.events-list {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: rgba(100, 108, 255, 0.15);
+  border-radius: 4px;
+  border-left: 4px solid #646cff;
+}
+
+.event-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.event-info strong {
+  color: #82ca9d;
+}
+
+.delta-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.delta-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.delta-label {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.delta-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #82ca9d;
+}
+
+/* Recharts customization */
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.recharts-legend-wrapper {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
