@@ -6,16 +6,16 @@ Built with FastAPI, React, and Docker Compose.
 
 [![CI](https://github.com/yourusername/forecastlab/workflows/CI/badge.svg)](https://github.com/yourusername/forecastlab/actions)
 
-## ✨ Features
+##Features
 
-- **📊 Time Series Forecasting**: Seasonal Naive and SARIMAX models with prediction intervals
-- **🎯 Counterfactual Scenarios**: Model promotional events, price changes, and other interventions
-- **📈 Model Diagnostics**: Residual analysis, ACF, and automatic changepoint detection
-- **✅ Backtesting**: Rolling window validation with MAE, RMSE, MAPE metrics
-- **📁 Dataset Management**: Upload CSV files or load sample data instantly
-- **🎨 Interactive Visualization**: Beautiful charts with Recharts
+- **Time Series Forecasting**: Seasonal Naive and SARIMAX models with prediction intervals
+- **Counterfactual Scenarios**: Model promotional events, price changes, and other interventions
+- **Model Diagnostics**: Residual analysis, ACF, and automatic changepoint detection
+- **Backtesting**: Rolling window validation with MAE, RMSE, MAPE metrics
+- **Dataset Management**: Upload CSV files or load sample data instantly
+- **Interactive Visualization**: Beautiful charts with Recharts
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 # Clone the repository
@@ -29,9 +29,9 @@ docker compose up --build
 open http://localhost:3000
 ```
 
-That's it! The app will be running with sample data pre-loaded.
+The app will be run with sample data preloaded.
 
-## 📖 Demo Walkthrough
+## Demo Walkthrough
 
 ### 1. Load Sample Data
 - Click **"Load Sample Data"** button
@@ -51,7 +51,7 @@ That's it! The app will be running with sample data pre-loaded.
   - Dates: 2024-02-01 to 2024-02-14
   - Type: Multiplicative
   - Value: 25 (for +25% uplift)
-- Click **"🚀 Run Scenario Analysis"**
+- Click **"Run Scenario Analysis"**
 - Compare baseline vs scenario forecasts
 - Review impact metrics
 
@@ -62,7 +62,7 @@ That's it! The app will be running with sample data pre-loaded.
   - ACF chart (autocorrelation decay)
   - Detected changepoints (structural breaks)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 forecastlab/
@@ -84,7 +84,7 @@ forecastlab/
 └── docker-compose.yml    # Orchestration
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 ```bash
@@ -115,7 +115,7 @@ npm run build
 | `/api/scenarios/{id}/events` | POST | Add event to scenario |
 | `/api/scenarios/{id}/run` | POST | Run scenario comparison |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: FastAPI, Pandas, Statsmodels, NumPy, scikit-learn
 - **Frontend**: React, Vite, Recharts
@@ -123,7 +123,7 @@ npm run build
 - **Infrastructure**: Docker, Docker Compose
 - **Testing**: pytest, GitHub Actions CI
 
-## 📝 CSV Format
+## CSV Format
 
 Upload CSVs with these columns:
 
@@ -139,7 +139,7 @@ timestamp,y
 
 Optional columns like `x_promo` are supported for future enhancements.
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Retail**: Model Black Friday, holiday sales, clearance events
 - **Marketing**: Estimate campaign ROI, promotional effectiveness
@@ -147,23 +147,5 @@ Optional columns like `x_promo` are supported for future enhancements.
 - **Operations**: Capacity planning for peak periods
 - **Supply Chain**: Demand forecasting with known events
 
-## 🤝 Contributing
+Feel free to contribute.
 
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new features
-4. Submit a pull request
-
-## 📄 License
-
-MIT License - see LICENSE file for details
-
-## 🙏 Acknowledgments
-
-Built with modern forecasting best practices and inspired by real-world time series challenges.
-
----
-
-**Made with ❤️ for data-driven decision making**
