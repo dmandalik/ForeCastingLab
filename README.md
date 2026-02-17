@@ -56,7 +56,7 @@ The app will be run with sample data preloaded.
 - Review impact metrics
 
 ### 4. View Diagnostics
-- Click **"📊 View Diagnostics"**
+- Click **"View Diagnostics"**
 - Examine:
   - Residual plot (should center around 0)
   - ACF chart (autocorrelation decay)
@@ -101,7 +101,7 @@ npm install
 npm run build
 ```
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -149,3 +149,4 @@ Optional columns like `x_promo` are supported for future enhancements.
 
 Feel free to contribute.
 
+Reach out with any questions!
